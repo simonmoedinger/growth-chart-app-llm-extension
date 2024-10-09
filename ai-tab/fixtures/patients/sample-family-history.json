@@ -1,0 +1,63 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "FamilyMemberHistory",
+          "status": "completed",
+          "patient": {
+            "reference": "Patient/60"
+          },
+          "date": "2024-05-24",
+          "name": "Family History for Child",
+          "relationship": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "CHILD",
+                "display": "Child"
+              }
+            ]
+          },
+          "condition": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "248328002",
+                    "display": "Height of mother"
+                  }
+                ],
+                "text": "Height of mother"
+              },
+              "outcome": {
+                "text": "165 cm"
+              }
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "248329005",
+                    "display": "Height of father"
+                  }
+                ],
+                "text": "Height of father"
+              },
+              "outcome": {
+                "text": "180 cm"
+              }
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "FamilyMemberHistory"
+        }
+      }
+    ]
+  }
+  

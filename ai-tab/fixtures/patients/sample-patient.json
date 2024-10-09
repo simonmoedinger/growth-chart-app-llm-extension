@@ -1,0 +1,639 @@
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry": [
+        {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-02-08",
+          "valueQuantity": { "value": 3.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-02-08",
+          "valueQuantity": { "value": 50, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-02-08",
+          "valueQuantity": { "value": 35, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-03-09",
+          "valueQuantity": { "value": 4, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-03-09",
+          "valueQuantity": { "value": 52, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-03-09",
+          "valueQuantity": { "value": 36, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-04-09",
+          "valueQuantity": { "value": 4.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-04-09",
+          "valueQuantity": { "value": 54, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-04-09",
+          "valueQuantity": { "value": 37, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-06-08",
+          "valueQuantity": { "value": 5.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-06-08",
+          "valueQuantity": { "value": 58, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-06-08",
+          "valueQuantity": { "value": 39, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-08-08",
+          "valueQuantity": { "value": 6.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-08-08",
+          "valueQuantity": { "value": 61, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-08-08",
+          "valueQuantity": { "value": 41, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-11-08",
+          "valueQuantity": { "value": 7.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-11-08",
+          "valueQuantity": { "value": 67, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2020-11-08",
+          "valueQuantity": { "value": 43, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-02-08",
+          "valueQuantity": { "value": 8.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-02-08",
+          "valueQuantity": { "value": 72, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-02-08",
+          "valueQuantity": { "value": 44.5, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-05-09",
+          "valueQuantity": { "value": 9.2, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-05-09",
+          "valueQuantity": { "value": 76, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-05-09",
+          "valueQuantity": { "value": 45.5, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-08-08",
+          "valueQuantity": { "value": 10, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-08-08",
+          "valueQuantity": { "value": 79, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2021-08-08",
+          "valueQuantity": { "value": 46.5, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2022-02-08",
+          "valueQuantity": { "value": 11, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8306-3", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2022-02-08",
+          "valueQuantity": { "value": 85, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8287-5", "display": "Head circumference"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2022-02-08",
+          "valueQuantity": { "value": 47.5, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2022-08-24",
+          "valueQuantity": { "value": 11.8, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8302-2", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2022-08-24",
+          "valueQuantity": { "value": 89, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2023-02-23",
+          "valueQuantity": { "value": 12.5, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8302-2", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2023-02-23",
+          "valueQuantity": { "value": 92, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] },
+          "code": { "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2024-02-23",
+          "valueQuantity": { "value": 13, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg"  }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8302-2", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/93" },
+          "effectiveDateTime": "2024-02-23",
+          "valueQuantity": { "value": 94, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm"  }
+        }
+      }
+    ]
+  }
+  

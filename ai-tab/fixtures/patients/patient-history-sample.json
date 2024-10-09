@@ -1,0 +1,510 @@
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry": [
+      {
+        "request": {
+          "method": "POST",
+          "url": "Condition"
+        },
+        "resource": {
+          "resourceType": "Condition",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "44054006",
+                "display": "Diabetes mellitus type 1"
+              }
+            ],
+            "text": "Diabetes mellitus type 1"
+          },
+          "subject": { "reference": "Patient/678" },
+          "onsetDateTime": "2020-03-15",
+          "description": "Patient diagnosed with type 1 diabetes."
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Condition"
+        },
+        "resource": {
+          "resourceType": "Condition",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "resolved",
+                "display": "Resolved"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Asthma"
+              }
+            ],
+            "text": "Asthma"
+          },
+          "subject": { "reference": "Patient/678" },
+          "onsetDateTime": "2018-05-01",
+          "abatementDateTime": "2020-01-01",
+          "description": "Patient had a history of asthma, now resolved."
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "MedicationRequest"
+        },
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "860975",
+                "display": "Metformin 500 MG Oral Tablet"
+              }
+            ],
+            "text": "Metformin"
+          },
+          "subject": { "reference": "Patient/678" },
+          "authoredOn": "2020-04-01",
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet by mouth twice daily",
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/route-codes",
+                    "code": "PO",
+                    "display": "Oral route"
+                  }
+                ]
+              }
+            }
+          ],
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "44054006",
+                  "display": "Diabetes mellitus type 1"
+                }
+              ],
+              "text": "Type 1 Diabetes"
+            }
+          ],
+          "note": [
+            {
+              "text": "Patient was prescribed Metformin for managing blood glucose levels."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "MedicationRequest"
+        },
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049502",
+                "display": "Albuterol 90mcg/actuation inhaler"
+              }
+            ],
+            "text": "Albuterol"
+          },
+          "subject": { "reference": "Patient/678" },
+          "authoredOn": "2018-05-01",
+          "dosageInstruction": [
+            {
+              "text": "Inhale 2 puffs every 4-6 hours as needed",
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/route-codes",
+                    "code": "INH",
+                    "display": "Inhalation route"
+                  }
+                ]
+              }
+            }
+          ],
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72892002",
+                  "display": "Asthma"
+                }
+              ],
+              "text": "Asthma"
+            }
+          ],
+          "note": [
+            {
+              "text": "Albuterol was used to manage acute asthma symptoms."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Procedure"
+        },
+        "resource": {
+          "resourceType": "Procedure",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80146002",
+                "display": "Appendectomy"
+              }
+            ],
+            "text": "Appendectomy"
+          },
+          "subject": { "reference": "Patient/678" },
+          "performedDateTime": "2019-09-20",
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "44130008",
+                  "display": "Acute appendicitis"
+                }
+              ],
+              "text": "Acute appendicitis"
+            }
+          ],
+          "note": [
+            {
+              "text": "Appendectomy performed due to acute appendicitis."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Procedure"
+        },
+        "resource": {
+          "resourceType": "Procedure",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "257736006",
+                "display": "Tonsillectomy"
+              }
+            ],
+            "text": "Tonsillectomy"
+          },
+          "subject": { "reference": "Patient/678" },
+          "performedDateTime": "2018-06-15",
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "195662009",
+                  "display": "Chronic tonsillitis"
+                }
+              ],
+              "text": "Chronic tonsillitis"
+            }
+          ],
+          "note": [
+            {
+              "text": "Tonsillectomy performed due to chronic tonsillitis."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "AllergyIntolerance"
+        },
+        "resource": {
+          "resourceType": "AllergyIntolerance",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "category": ["food"],
+          "criticality": "high",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "91935009",
+                "display": "Peanut allergy"
+              }
+            ],
+            "text": "Peanut allergy"
+          },
+          "reaction": [
+            {
+              "substance": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "91935009",
+                    "display": "Peanuts"
+                  }
+                ]
+              },
+              "manifestation": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "39579001",
+                      "display": "Anaphylactic reaction"
+                    }
+                  ]
+                }
+              ],
+              "severity": "severe"
+            }
+          ],
+          "note": [
+            {
+              "text": "Severe allergic reaction to peanuts, includes anaphylaxis."
+            }
+          ],
+          "recordedDate": "2015-08-01",
+          "subject": { "reference": "Patient/678" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "AllergyIntolerance"
+        },
+        "resource": {
+          "resourceType": "AllergyIntolerance",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                "code": "inactive",
+                "display": "Inactive"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                "code": "unconfirmed",
+                "display": "Unconfirmed"
+              }
+            ]
+          },
+          "category": ["medication"],
+          "criticality": "low",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "267425008",
+                "display": "Penicillin allergy"
+              }
+            ],
+            "text": "Penicillin allergy"
+          },
+          "reaction": [
+            {
+              "substance": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "267425008",
+                    "display": "Penicillin"
+                  }
+                ]
+              },
+              "manifestation": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "247472004",
+                      "display": "Rash"
+                    }
+                  ]
+                }
+              ],
+              "severity": "mild"
+            }
+          ],
+          "note": [
+            {
+              "text": "Mild rash observed after penicillin administration."
+            }
+          ],
+          "recordedDate": "2016-07-15",
+          "subject": { "reference": "Patient/678" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        },
+        "resource": {
+          "resourceType": "Immunization",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable"
+              }
+            ]
+          },
+          "status": "completed",
+          "occurrenceDateTime": "2021-10-01",
+          "note": [
+            {
+              "text": "Annual flu vaccination."
+            }
+          ],
+          "patient": { "reference": "Patient/678" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        },
+        "resource": {
+          "resourceType": "Immunization",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "03",
+                "display": "MMR (measles, mumps, rubella) vaccine"
+              }
+            ]
+          },
+          "status": "completed",
+          "occurrenceDateTime": "2015-03-15",
+          "note": [
+            {
+              "text": "MMR vaccination administered as part of routine immunization schedule."
+            }
+          ],
+          "patient": { "reference": "Patient/678" }
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "8302-2", "display": "Body height"}] 
+          },
+          "subject": { "reference": "Patient/678" },
+          "effectiveDateTime": "2022-04-08",
+          "valueQuantity": { "value": 145, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" },
+          "note": [
+            {
+              "text": "Height measurement recorded during routine check-up."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "status": "final",
+          "category": { 
+            "coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs"}] 
+          },
+          "code": { 
+            "coding": [{"system": "http://loinc.org", "code": "29463-7", "display": "Body weight"}] 
+          },
+          "subject": { "reference": "Patient/678" },
+          "effectiveDateTime": "2022-04-08",
+          "valueQuantity": { "value": 35, "unit": "kg", "system": "http://unitsofmeasure.org", "code": "kg" },
+          "note": [
+            {
+              "text": "Weight measurement recorded during routine check-up."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

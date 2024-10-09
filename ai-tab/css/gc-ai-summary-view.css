@@ -1,0 +1,667 @@
+/* -------------------------------------------------------------------------- *
+ *                              AI Tab                                        *
+ * -------------------------------------------------------------------------- */
+
+ #view-ai.tab-panel {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+/* Sidebar */
+#settings-sidebar {
+	width: 270px;
+	padding: 20px;
+	background-color: #88939D;
+	border-radius: 0px 15px 0px 0px;
+	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	overflow: visible;
+	height: 100%;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	margin-top: 20px;
+	position: fixed;
+}
+
+#settings-sidebar h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.setting-group {
+	margin-bottom: 20px;
+	color: white;
+}
+
+.setting-group h3 {
+	font-size: 18px;
+	display: inline-block;
+    margin-right: 10px;
+	vertical-align: middle; 
+	color: white;
+    margin-bottom: 5px;
+}
+
+.tooltip-container {
+    display: inline-block; 
+    position: relative;
+}
+
+.setting-group img.info1-icon,
+.setting-group img.info2-icon,
+.setting-group img.info3-icon {
+    display: inline-block; 
+    vertical-align: middle; 
+	margin-bottom: 5px;
+}
+.tooltip {
+    visibility: hidden; 
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    max-width: 800px;
+	min-width: 200px;
+}
+
+.tooltip1 {
+    visibility: hidden; 
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    max-width: 800px;
+	min-width: 200px;
+}
+
+.tooltip::after,
+.tooltip1:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip,
+.tooltip-container:hover .tooltip1 {
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.tooltip-content {
+   background: white;
+    border-radius: 15px;
+    padding: 7px 12px;
+    display: inline-block;
+}
+
+.tooltip-text {
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;;
+    font-weight: 500;
+    line-height: 15px;
+    word-wrap: break-word;
+}
+
+#show-prompt-button {
+	display: block; 
+	margin-top: 10px;
+	padding: 5px 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	color: #000000;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 14px;
+}
+
+#show-prompt-button:hover {
+	background-color: #88939D;
+}
+
+#guideline-name {
+	font-size: 14px;
+	padding: 5px 10px;
+	width: fit-content;
+    margin-top: 10px; 
+}
+
+#guideline-files .download-icon {
+    margin-top: 5px; 
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.setting-group img.download-3-icon,
+.setting-group img.printer-icon {
+	display: inline-block;
+	cursor: pointer;
+    margin-top: 10px; 
+	margin-left: 10px;
+}
+
+.info-guidelines {
+    color: white;
+}
+
+/* Prompt Popup */
+#prompt-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+}
+
+.popup-content pre {
+    max-width: 100%;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+}
+
+.close-button-Prompt {
+	position: fixed;
+    top: 80px;
+    right: 140px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.popup-content .prompt-header {
+    font-weight: bold;
+}
+
+/* AI Content (center) */
+.icon-container {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.icon-container img {
+    display: inline-block; 
+	vertical-align: top;
+}
+
+.ai-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ai-content-wrapper h1 {
+    font-size: 28px;
+    text-align: center;
+    width: 50%;
+	margin-bottom: 10px;
+}
+
+.ai-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ai-content h2 {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 630px;
+    font-size: 18px;
+}
+
+.ai-response {
+    padding: 10px;
+    border-radius: 15px;
+	border-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+	margin-left: 130px;
+	max-height: 315px;
+}
+
+.ai-response h3,
+.ai-response-diagnoses h3, 
+.ai-response-growth h3,
+.ai-response-history h3,
+.ai-response-clinical h3 {
+	display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.h3-bold {
+    font-weight: bold;
+}
+
+.ai-response img {
+    margin-right: 10px;
+	vertical-align: top;
+}
+
+.ai-response-diagnoses,
+.ai-response-growth,
+.ai-response-history,
+.ai-response-clinical {
+	padding: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+	margin-left: 130px;
+	max-height: 315px;
+	border-radius: 15px;
+	border-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button.chevron-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+button.chevron-button img {
+    margin-right: 5px;
+    transition: opacity 0.2s;
+}
+
+button.chevron-button img:hover {
+    opacity: 0.7;
+}
+
+.ai-response .chevron-summary,
+.ai-response .chevron-diagnoses,
+.ai-response .chevron-growth,
+.ai-response .chevron-history,
+.ai-response .chevron-clinical,
+.ai-response .chevron-communication {
+    margin-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#ai-response-growth-diagnoses,
+#ai-response-growth-data,
+#ai-response-patient-history,
+#ai-response-clinical-steps {
+    display: none;
+}
+
+#ai-response-summary {
+    display: block;
+}
+
+#ai-response-summary,
+#ai-response-growth-diagnoses,
+#ai-response-growth-data,
+#ai-response-patient-history,
+#ai-response-clinical-steps {
+    width: 95%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+	max-height: 285px; 
+    overflow-y: auto;
+	margin-left: 30px;
+}
+
+.ai-response h3::before {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+/* Halluzination Warning */
+
+.halluzination-warning {
+    position: fixed;
+    top: 106px;
+    left: 1210px;
+	padding: 7px 0px 8px 4px;
+    border-radius: 15px;
+    border: 1px solid #8b939d;
+	border-color: #FF9900;
+	background: rgba(255, 153, 0, 0.16);
+    box-sizing: border-box;
+    width: 205px;
+    height: 55px;
+    overflow: hidden;
+    font-size: 8px;
+    color: #757575;
+}
+.polygon-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 21px;
+    height: 19.6px;
+}
+.please-be-aware-container {
+    position: absolute;
+    top: 9px;
+    left: 22px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+}
+.div {
+    position: absolute;
+    top: 4.5px;
+    left: 6px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 3.5px;
+    height: 9.2px;
+}
+.vector-parent {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 13px;
+    height: 14.2px;
+    font-size: 9px;
+    color: #fff;
+}
+
+/* Chat */
+#chat-button {
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: none;
+    z-index: 1000;
+} 
+
+#chat-button img {
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* chat popup */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: none;
+    z-index: 1000;
+}
+
+#chat-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #88939D;
+    border-radius: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, bottom 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chat-container.show {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    bottom: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #88939D;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.chat-content {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.chat-input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+	width: 220px;
+}
+
+.upload-button,
+.send-button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#chat-container.show {
+    width: 300px;
+    height: 450px;
+}
+
+.chat-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-message {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background-color: #88939D;
+    color: white;
+    align-self: flex-end;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    40% {
+        color: black;
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    60% {
+        text-shadow: .25em 0 0 black, .5em 0 0 rgba(0,0,0,0);
+    }
+    80%, 100% {
+        text-shadow: .25em 0 0 black, .5em 0 0 black;
+    }
+}
+
+.loading-dots::after {
+    content: '...';
+    animation: dots 1s steps(5, end) infinite;
+}
+
+/* Warning if abnormality is detected */
+#warning-ag-popup {
+    position: fixed;
+    top: 13px; 
+    right: 13px; 
+    z-index: 100000; 
+    padding: 8px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid red;
+}
+
+.warning-ag-popup pre {
+    margin: 0;
+    color: white;
+}
+.abnormality-warning {
+    visibility: hidden; 
+    position: absolute;
+    display: inline-block;
+    margin-left: 490px;
+}
+.alarm-mark {
+    visibility: hidden; 
+    position: absolute;
+    left: 10.5px;
+    display: flex;
+    color: red;
+    font-size: xx-large;
+}
+.check-icon {
+    visibility: hidden; 
+    position: absolute;
+    height: 25px;
+    width: 20px;
+    top: 2px;
+}
+.view-ai #the-tab .disable-overlay {
+    display: block;
+}
+
+#error-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cd1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    max-width: 400px;
+    word-wrap: break-word; 
+    overflow-y: auto; 
+    max-height: 80%; 
+}
+
+#close-popup {
+    margin-top: 10px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#close-popup:hover {
+    background-color: #333;
+}

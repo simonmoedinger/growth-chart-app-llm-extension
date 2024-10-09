@@ -1,0 +1,1039 @@
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization1",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "08",
+                "display": "Hepatitis B, pediatric/adolescent"
+              }
+            ],
+            "text": "Hepatitis B"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2020-02-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization2",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "08",
+                "display": "Hepatitis B, pediatric/adolescent"
+              }
+            ],
+            "text": "Hepatitis B"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2020-03-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization3",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "Diphtheria, tetanus toxoids and acellular pertussis vaccine (DTaP)"
+              }
+            ],
+            "text": "DTaP"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2020-04-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization4",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "116",
+                "display": "Rotavirus, live, oral, pentavalent"
+              }
+            ],
+            "text": "Rotavirus"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2020-05-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization5",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "133",
+                "display": "Pneumococcal conjugate vaccine, 13 valent"
+              }
+            ],
+            "text": "PCV13"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2020-08-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization6",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "89",
+                "display": "Poliovirus vaccine, inactivated (IPV)"
+              }
+            ],
+            "text": "IPV"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2021-02-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization7",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "03",
+                "display": "Measles, Mumps, and Rubella Virus Vaccine (MMR)"
+              }
+            ],
+            "text": "MMR"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2022-05-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization8",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "21",
+                "display": "Varicella virus vaccine"
+              }
+            ],
+            "text": "Varicella"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2022-05-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization9",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "119",
+                "display": "Hepatitis A"
+              }
+            ],
+            "text": "Hepatitis A"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2022-08-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization10",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "DTaP Booster"
+              }
+            ],
+            "text": "DTaP Booster"
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "occurrenceDateTime": "2024-02-08",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "apgar-score",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "9274-2",
+                "display": "Apgar score at 1 minute"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-02-08T10:30:00",
+          "valueInteger": 8
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "newborn-screening",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "54089-8",
+                "display": "Newborn screening panel"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-02-09T12:00:00",
+          "valueString": "All tests negative"
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "bilirubin-test",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "1975-2",
+                "display": "Bilirubin total [Mass/volume] in Serum or Plasma"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-02-10T08:00:00",
+          "valueQuantity": {
+            "value": 5.8,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "pulse-oximetry",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "vital-signs",
+                  "display": "Vital Signs"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2708-6",
+                "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-02-11T09:00:00",
+          "valueQuantity": {
+            "value": 98,
+            "unit": "%",
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-birth",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-02-08",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Reflexive movements, grasp reflex observed"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Eye contact established, crying"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Moro reflex, sucking reflex observed"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-1month",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-03-08",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Lifts head briefly, moves arms and legs"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Responds to sound, recognizes caregiver's voice"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Grasp reflex present, rooting reflex"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-6months",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2020-08-08",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Rolls over, begins to sit with support"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Smiles, responds to facial expressions"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Diminishing Moro reflex, emerging voluntary movements"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-12months",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2021-02-08",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Stands with support, begins walking with help"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Imitates others, waves goodbye"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Disappearing grasp reflex, emerging fine motor skills"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-3years",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2023-02-23",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Can run slowly, climbs stairs with alternating feet"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Plays with others, shows a wide range of emotions"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Reflexes normal, well-coordinated motor function"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-4years",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "effectiveDateTime": "2024-02-23",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Balances on one foot for some seconds, hops and skips"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Takes turns in games, understands emotions of others"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Normal reflexes, mature motor coordination"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "id": "condition-asthma",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "195967001",
+                "display": "Asthma"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "onsetDateTime": "2023-01-12",
+          "severity": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "24484000",
+                "display": "Moderate"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Condition"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "AllergyIntolerance",
+          "id": "allergy-peanut",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "91935009",
+                "display": "Peanut allergy"
+              }
+            ]
+          },
+          "patient": {
+            "reference": "Patient/160"
+          },
+          "reaction": [
+            {
+              "manifestation": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "39579001",
+                      "display": "Anaphylaxis"
+                    }
+                  ],
+                  "text": "Anaphylaxis"
+                }
+              ],
+              "severity": "severe"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "AllergyIntolerance"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "id": "condition-ear-infection",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "resolved",
+                "display": "Resolved"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "65363002",
+                "display": "Acute otitis media"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/160"
+          },
+          "onsetDateTime": "2021-11-15",
+          "abatementDateTime": "2021-11-22",
+          "severity": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "255604002",
+                "display": "Mild"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Condition"
+        }
+      }
+    ]
+  }
+  

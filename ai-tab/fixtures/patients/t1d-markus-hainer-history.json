@@ -1,0 +1,703 @@
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-birth",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2016-04-15",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Grasp reflex present, basic limb movement"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Makes eye contact and cries to express needs"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Moro reflex and rooting reflex observed"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-1month",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2016-05-15",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Turns head side to side, some head lifting"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Responds to caregiver's voice"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Rooting and grasp reflexes still present"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-3months",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2016-06-14",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Lifts head briefly during tummy time"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Starts smiling at familiar people"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Grasp reflex diminishing"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-6months",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2016-10-15",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Rolls over from tummy to back"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Babbles, imitates sounds"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Moro reflex fading"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-hepb",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "08",
+                "display": "Hepatitis B, pediatric/adolescent"
+              }
+            ],
+            "text": "Hepatitis B"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2016-04-15",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-dtap",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "Diphtheria, tetanus toxoids and acellular pertussis vaccine (DTaP)"
+              }
+            ],
+            "text": "DTaP"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2016-06-14",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-rotavirus",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "119",
+                "display": "Rotavirus, live, oral"
+              }
+            ],
+            "text": "Rotavirus"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2016-08-14",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-polio",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "89",
+                "display": "Poliovirus vaccine, inactivated (IPV)"
+              }
+            ],
+            "text": "IPV"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2016-10-15",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-4years",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2020-04-15",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Can balance on one foot, hops and skips"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Plays cooperatively with peers, can take turns"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Normal reflexes and coordination"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "milestones-6years",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey",
+                  "display": "Survey"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57024-2",
+                "display": "Developmental milestones"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "effectiveDateTime": "2022-04-15",
+          "component": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419488002",
+                    "display": "Motor skills"
+                  }
+                ]
+              },
+              "valueString": "Can ride a bicycle without training wheels, good hand-eye coordination"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419410000",
+                    "display": "Social interaction"
+                  }
+                ]
+              },
+              "valueString": "Shows empathy, makes friends easily"
+            },
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "419031000",
+                    "display": "Reflexes"
+                  }
+                ]
+              },
+              "valueString": "Normal reflexes and coordination"
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-mmr",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "03",
+                "display": "Measles, Mumps, and Rubella Virus Vaccine (MMR)"
+              }
+            ],
+            "text": "MMR"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2020-05-01",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-varicella",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "21",
+                "display": "Varicella Virus Vaccine"
+              }
+            ],
+            "text": "Varicella"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2020-05-01",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "immunization-dtap-booster",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "DTaP Booster"
+              }
+            ],
+            "text": "DTaP Booster"
+          },
+          "patient": {
+            "reference": "Patient/396"
+          },
+          "occurrenceDateTime": "2020-05-01",
+          "primarySource": true
+        },
+        "request": {
+          "method": "POST",
+          "url": "Immunization"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "id": "condition-broken-arm",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "resolved",
+                "display": "Resolved"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "125605004",
+                "display": "Fracture of forearm"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/396"
+          },
+          "onsetDateTime": "2021-05-01",
+          "abatementDateTime": "2021-08-01",
+          "severity": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "24484000",
+                "display": "Moderate"
+              }
+            ]
+          },
+          "bodySite": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72704001",
+                "display": "Left forearm"
+              }
+            ]
+          },
+          "note": [
+            {
+              "text": "Patient sustained a fracture of the left forearm from a fall. Cast was applied, and full recovery was achieved by August 2021."
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Condition"
+        }
+      }
+    ]
+  }
+  
