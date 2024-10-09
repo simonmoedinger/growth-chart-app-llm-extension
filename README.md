@@ -110,7 +110,7 @@ npm install
 ```
 npx http-server
 ```
-3. [Login at Logica Health](https://id.logicahealth.org/auth/realms/master/protocol/openid-connect/auth?response_type=code&client_id=reference-auth&redirect_uri=https%3A%2F%2Fauth.logicahealth.org%2Fsso%2Flogin&state=cd318607-46b6-4028-8b1d-c555aa54b4bb&login=true&scope=openid) to access the SMART FHIR Server with the synthetic patients: 
+3. [Login at Logica Health](https://sandbox.logicahealth.org/test1thesis/apps) to access the SMART FHIR Server with the synthetic patients: 
 
     3.1 Use the following credentials:
     -  Email: simonmoedinger@outlook.de
