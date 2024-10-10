@@ -99,7 +99,7 @@ Structure:
 -----------------------------------------------------------------------------
 ## Deployment
 
-Prerequisite: You must have installed node with npm. [Follow this instructions to install node. (I recommend using brew)](https://nodejs.org/en/download/package-manager/current)
+Prerequisite: You must have installed node with npm. [Follow this instructions to install node.](https://nodejs.org/en/download/package-manager/current)
 
 0. Run npm:
 ```
