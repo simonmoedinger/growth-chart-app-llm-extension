@@ -99,22 +99,24 @@ Structure:
 -----------------------------------------------------------------------------
 ## Deployment
 
-0. Install npm:
+Prerequisite: You must have installed node with npm. [Follow this instructions to install node](https://nodejs.org/en/download/package-manager/current)
+
+0. Run npm:
 ```
 npm install
 ```
-1. Before you run the project insert your OpenAI API key in gc-ai-summary.js
 
+1. Before you run the project insert the OpenAI API key I have sent you per email in gc-ai-summary.js (~line 131)
 
 2. To run the project use 
 ```
 npx http-server
 ```
-3. [Login at Logica Health](https://sandbox.logicahealth.org/test1thesis/apps) to access the SMART FHIR Server with the synthetic patients: 
+3. [Login at Logica Health](https://sandbox.logicahealth.org) to access the SMART FHIR Server with the synthetic patients: 
 
-    3.1 Use the following credentials:
-    -  Email: simonmoedinger@outlook.de
-    - Password: Test1234&
+    3.1 Use the credentials from the email I have sent you:
+    -  Email: ""
+    - Password: ""
 
     3.2 Click on "thesis-growth-chart-app"
 
@@ -122,7 +124,7 @@ npx http-server
 
     3.4 Choose a physician
 
-    3.5 Choose a physician, e.g. Jacob Miller
+    3.5 Choose a patient, e.g. Jacob Miller
 
     3.6 Click on "growth-chart-app" < "launch"
 
