@@ -92,6 +92,7 @@ Structure:
 ├── index.html
 ├── launch.html
 ├── load-fhir-data.js
+├── README.md
 └── ...
 ```
 
