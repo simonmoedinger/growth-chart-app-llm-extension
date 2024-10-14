@@ -55,7 +55,7 @@ Structure:
 (only new and updated files visible)
 ```
 .
-├── growth-chart-app-master/
+├── smartapp/
 │   ├── ai-tab/
 │   │   ├── css
 │   │   │   └── gc-ai-summary-view.css
